@@ -1,4 +1,4 @@
-import { Box, HStack, Spacer, Flex } from "@chakra-ui/react";
+import { Box, Button, HStack, Spacer, Flex } from "@chakra-ui/react";
 
 const Header: React.FC = () => {
   return (
@@ -10,6 +10,7 @@ const Header: React.FC = () => {
         <Box>エビ</Box>
         <Box>かに</Box>
         <Box>たこ</Box>
+        <Button size={"xs"}>Eats!!</Button>
       </HStack>
     </Box>
     // <Flex px={12} py={10}>
