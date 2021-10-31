@@ -3,9 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import "tailwindcss/tailwind.css";
+import 'tailwindcss/tailwind.css';
 
-const Home: NextPage = () => {
+const Tailwind: NextPage = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8 sm:py-12 md:py-16 sm:px-8">
       <div className="relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t sm:bg-none from-black">
@@ -80,4 +80,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Tailwind;
