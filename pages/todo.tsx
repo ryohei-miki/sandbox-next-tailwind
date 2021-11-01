@@ -20,38 +20,38 @@ import theme from "../theme";
 const ChakraComponent: React.FC = () => {
   return (
     <ChakraProvider theme={theme}>
-      <HStack>
-        <Box w="30%" bg="whit">
-          <VStack>
-            <Avatar
-              size="2xl"
-              name="Segun Adebayo"
-              src="https://bit.ly/sage-adebayo"
-            />
-            <Heading as="h2" size="md">
-              Miranda
-            </Heading>
-            <Text fontSize="md" fontWeight="medium" color="gray.400">
-              Lead Designer
-            </Text>
-            <Wrap direction="column">
-              <WrapItem>Work</WrapItem>
-              <WrapItem>Plan</WrapItem>
-              <WrapItem>Stats</WrapItem>
-              <WrapItem>Documents</WrapItem>
-              <WrapItem>Users</WrapItem>
-              <WrapItem>Settings</WrapItem>
-            </Wrap>
-          </VStack>
-        </Box>
-        <Box w="70%" bg="gray.200">
-          <HStack>
-            <PhoneIcon />
-          </HStack>
-        </Box>
-        {/* <Container>ここは左側</Container>
-        <Container>ここは右</Container> */}
-      </HStack>
+      <Box>
+        <HStack alignItems="start">
+          <Box w="30%" h="100vh" bg="white" p="30">
+            <VStack>
+              <Avatar
+                size="2xl"
+                name="Segun Adebayo"
+                src="https://bit.ly/sage-adebayo"
+              />
+              <Heading as="h2" size="md">
+                Miranda
+              </Heading>
+              <Text fontSize="md" fontWeight="medium" color="gray.400">
+                Lead Designer
+              </Text>
+              <Wrap direction="column">
+                <WrapItem>Work</WrapItem>
+                <WrapItem>Plan</WrapItem>
+                <WrapItem>Stats</WrapItem>
+                <WrapItem>Documents</WrapItem>
+                <WrapItem>Users</WrapItem>
+                <WrapItem>Settings</WrapItem>
+              </Wrap>
+            </VStack>
+          </Box>
+          <Box w="70%" h="100vh" bg="gray.100" p="30">
+            <HStack>
+              <PhoneIcon />
+            </HStack>
+          </Box>
+        </HStack>
+      </Box>
     </ChakraProvider>
   );
 };
