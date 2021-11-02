@@ -1,4 +1,4 @@
-import { PhoneIcon } from "@chakra-ui/icons";
+import { PhoneIcon, EmailIcon, BellIcon, Search2Icon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -13,6 +13,9 @@ import {
   Text,
   Wrap,
   WrapItem,
+  Input,
+  InputGroup,
+  InputLeftElement,
 } from "@chakra-ui/react";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../theme";
@@ -23,7 +26,7 @@ const ChakraComponent: React.FC = () => {
       <Box>
         <HStack alignItems="start">
           <Box w="30%" h="100vh" bg="white" p="30">
-            <VStack>
+            <VStack p="1rem">
               <Avatar
                 size="2xl"
                 name="Segun Adebayo"
@@ -47,8 +50,33 @@ const ChakraComponent: React.FC = () => {
           </Box>
           <Box w="70%" h="100vh" bg="gray.100" p="30">
             <HStack>
-              <PhoneIcon />
+              <Box borderRadius="50%" p="3" bg="white">
+                <EmailIcon w={6} h={6} color="gray.400" />
+              </Box>
+              <Box borderRadius="50%" p="3" bg="white">
+                <BellIcon w={6} h={6} color="gray.400" />
+              </Box>
+              <Spacer />
+              <Box>
+                <InputGroup>
+                  <InputLeftElement pointerEvents="none">
+                    <Search2Icon color="gray.300" />
+                  </InputLeftElement>
+                  <Input
+                    bg="white"
+                    w="450px"
+                    type="tel"
+                    placeholder="Search Projects"
+                  />
+                </InputGroup>
+              </Box>
             </HStack>
+            <Box mt="72px">
+              <Heading as="h2" size="lg">
+                Projects Title
+              </Heading>
+              <Text>Short Description</Text>
+            </Box>
           </Box>
         </HStack>
       </Box>

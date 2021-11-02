@@ -34,23 +34,14 @@ const Colors = {
 };
 
 const GlobalStyles = {
-  global: {
-    body: {
-      bg: "gray.400",
-      color: "white",
-    },
-    a: {
-      color: "teal.500",
-      _hover: {
-        textDecoration: "underline",
-      },
-    },
+  html: {
+    fontSize: "100%",
   },
 };
 
 const theme = extendTheme({
-  global: {
-    styles: {
+  styles: {
+    global: {
       ...GlobalStyles,
     },
   },
