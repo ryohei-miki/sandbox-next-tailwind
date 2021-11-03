@@ -4,6 +4,7 @@ import {
   EmailIcon,
   BellIcon,
   Search2Icon,
+  CheckCircleIcon,
 } from "@chakra-ui/icons";
 import {
   Box,
@@ -136,16 +137,186 @@ const ChakraComponent: React.FC = () => {
                 </Button>
               </HStack>
             </Flex>
-            <HStack mt="40px">
+            {/* ここからタスク表示 */}
+            <HStack mt="40px" alignItems="start">
               <Box>
-                <Heading as="h3" size="ms">
+                <Heading as="h3" size="md" paddingBottom="20px">
                   Backlog
                 </Heading>
-                <Wrap direction="column">
-                  <WrapItem bg="white" w="300px" h="200px">
-                    <Heading as="h4" size="ms">
-                      Task Name
-                    </Heading>
+                <Wrap direction="column" spacing="50px">
+                  <WrapItem
+                    bg="white"
+                    w="300px"
+                    h="190px"
+                    p="25px"
+                    flexDirection="column"
+                  >
+                    <Flex direction="column" spacing="30px">
+                      <Heading as="h4" size="ms">
+                        Task Name
+                      </Heading>
+                      <HStack>
+                        <Text>Design</Text>
+                        <CheckCircleIcon color="cyan.300" />
+                      </HStack>
+                      <Text color="gray.500">Description</Text>
+                    </Flex>
+                    <Spacer />
+                    <HStack spacing="20px">
+                      <Avatar
+                        size="sm"
+                        name="Segun Adebayo"
+                        src="https://bit.ly/sage-adebayo"
+                      />
+                      <Box>
+                        <Text color="gray.600">08/09/21</Text>
+                      </Box>
+                      <Text color="gray.600" fontWeight="bold">
+                        2 subtasks
+                      </Text>
+                    </HStack>
+                  </WrapItem>
+                  <WrapItem
+                    bg="white"
+                    w="300px"
+                    h="190px"
+                    p="25px"
+                    flexDirection="column"
+                  >
+                    <Flex direction="column" spacing="30px">
+                      <Heading as="h4" size="ms">
+                        Task Name
+                      </Heading>
+                      <HStack>
+                        <Text>Design</Text>
+                        <CheckCircleIcon color="cyan.300" />
+                      </HStack>
+                      <Text color="gray.500">Description</Text>
+                    </Flex>
+                    <Spacer />
+                    <HStack spacing="20px">
+                      <Avatar
+                        size="sm"
+                        name="Segun Adebayo"
+                        src="https://bit.ly/sage-adebayo"
+                      />
+                      <Box>
+                        <Text color="gray.600">08/09/21</Text>
+                      </Box>
+                      <Text color="gray.600" fontWeight="bold">
+                        2 subtasks
+                      </Text>
+                    </HStack>
+                  </WrapItem>
+                </Wrap>
+              </Box>
+              <Box>
+                <Heading as="h3" size="md" paddingBottom="20px">
+                  In Progress
+                </Heading>
+                <Wrap direction="column" spacing="50px">
+                  <WrapItem
+                    bg="white"
+                    w="300px"
+                    h="190px"
+                    p="25px"
+                    flexDirection="column"
+                  >
+                    <Flex direction="column" spacing="30px">
+                      <Heading as="h4" size="ms">
+                        Task Name
+                      </Heading>
+                      <HStack>
+                        <Text>Design</Text>
+                        <CheckCircleIcon color="cyan.300" />
+                      </HStack>
+                      <Text color="gray.500">Description</Text>
+                    </Flex>
+                    <Spacer />
+                    <HStack spacing="20px">
+                      <Avatar
+                        size="sm"
+                        name="Segun Adebayo"
+                        src="https://bit.ly/sage-adebayo"
+                      />
+                      <Box>
+                        <Text color="gray.600">08/09/21</Text>
+                      </Box>
+                      <Text color="gray.600" fontWeight="bold">
+                        2 subtasks
+                      </Text>
+                    </HStack>
+                  </WrapItem>
+                  <WrapItem
+                    bg="white"
+                    w="300px"
+                    h="190px"
+                    p="25px"
+                    flexDirection="column"
+                  >
+                    <Flex direction="column" spacing="30px">
+                      <Heading as="h4" size="ms">
+                        Task Name
+                      </Heading>
+                      <HStack>
+                        <Text>Design</Text>
+                        <CheckCircleIcon color="cyan.300" />
+                      </HStack>
+                      <Text color="gray.500">Description</Text>
+                    </Flex>
+                    <Spacer />
+                    <HStack spacing="20px">
+                      <Avatar
+                        size="sm"
+                        name="Segun Adebayo"
+                        src="https://bit.ly/sage-adebayo"
+                      />
+                      <Box>
+                        <Text color="gray.600">08/09/21</Text>
+                      </Box>
+                      <Text color="gray.600" fontWeight="bold">
+                        2 subtasks
+                      </Text>
+                    </HStack>
+                  </WrapItem>
+                </Wrap>
+              </Box>
+              <Box>
+                <Heading as="h3" size="md" paddingBottom="20px">
+                  Review
+                </Heading>
+                <Wrap direction="column" spacing="50px">
+                  <WrapItem
+                    bg="white"
+                    w="300px"
+                    h="190px"
+                    p="25px"
+                    flexDirection="column"
+                  >
+                    <Flex direction="column" spacing="30px">
+                      <Heading as="h4" size="ms">
+                        Task Name
+                      </Heading>
+                      <HStack>
+                        <Text>Design</Text>
+                        <CheckCircleIcon color="cyan.300" />
+                      </HStack>
+                      <Text color="gray.500">Description</Text>
+                    </Flex>
+                    <Spacer />
+                    <HStack spacing="20px">
+                      <Avatar
+                        size="sm"
+                        name="Segun Adebayo"
+                        src="https://bit.ly/sage-adebayo"
+                      />
+                      <Box>
+                        <Text color="gray.600">08/09/21</Text>
+                      </Box>
+                      <Text color="gray.600" fontWeight="bold">
+                        2 subtasks
+                      </Text>
+                    </HStack>
                   </WrapItem>
                 </Wrap>
               </Box>
