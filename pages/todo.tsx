@@ -1,4 +1,10 @@
-import { PhoneIcon, EmailIcon, BellIcon, Search2Icon } from "@chakra-ui/icons";
+import {
+  AddIcon,
+  PhoneIcon,
+  EmailIcon,
+  BellIcon,
+  Search2Icon,
+} from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -71,12 +77,79 @@ const ChakraComponent: React.FC = () => {
                 </InputGroup>
               </Box>
             </HStack>
-            <Box mt="72px">
-              <Heading as="h2" size="lg">
-                Projects Title
-              </Heading>
-              <Text>Short Description</Text>
-            </Box>
+            <HStack
+              mt="72px"
+              spacing="30px"
+              paddingTop="40px"
+              borderTop="1px"
+              borderColor="gray.200"
+            >
+              <Box>
+                <Heading as="h2" size="md">
+                  Projects Title
+                </Heading>
+                <Text>Short Description</Text>
+              </Box>
+              <Box>
+                <Heading as="h2" size="sm">
+                  DUE DATE
+                </Heading>
+                <Text>Mon ,Aug 28, 2021</Text>
+              </Box>
+              <Spacer />
+              <HStack spacing="30px">
+                <Avatar
+                  size="md"
+                  name="Segun Adebayo"
+                  src="https://bit.ly/sage-adebayo"
+                />
+                <Avatar
+                  size="md"
+                  name="Segun Adebayo"
+                  src="https://bit.ly/sage-adebayo"
+                />
+                <Avatar
+                  size="md"
+                  name="Segun Adebayo"
+                  src="https://bit.ly/sage-adebayo"
+                />
+              </HStack>
+            </HStack>
+            <Flex
+              mt="40px"
+              justify="right"
+              paddingTop="40px"
+              borderTop="1px"
+              borderColor="gray.200"
+            >
+              <HStack>
+                <Button colorScheme="pink" variant="solid" borderRadius="20px">
+                  CREATE NEW TICKET
+                </Button>
+                <Button
+                  leftIcon={<AddIcon />}
+                  variant="ghost"
+                  color="gray.500"
+                  focusBorderColor="none"
+                >
+                  Add column{" "}
+                </Button>
+              </HStack>
+            </Flex>
+            <HStack mt="40px">
+              <Box>
+                <Heading as="h3" size="ms">
+                  Backlog
+                </Heading>
+                <Wrap direction="column">
+                  <WrapItem bg="white" w="300px" h="200px">
+                    <Heading as="h4" size="ms">
+                      Task Name
+                    </Heading>
+                  </WrapItem>
+                </Wrap>
+              </Box>
+            </HStack>
           </Box>
         </HStack>
       </Box>
