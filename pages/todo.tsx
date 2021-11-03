@@ -1,6 +1,5 @@
 import {
   AddIcon,
-  PhoneIcon,
   EmailIcon,
   BellIcon,
   Search2Icon,
@@ -18,8 +17,6 @@ import {
   Avatar,
   Spacer,
   Flex,
-  Container,
-  Center,
   Heading,
   Text,
   Wrap,
@@ -31,7 +28,7 @@ import {
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../theme";
 
-const ChakraComponent: React.FC = () => {
+const Todo: React.FC = () => {
   return (
     <ChakraProvider theme={theme}>
       <Box>
@@ -352,4 +349,4 @@ const ChakraComponent: React.FC = () => {
   );
 };
 
-export default ChakraComponent;
+export default Todo;
