@@ -5,6 +5,10 @@ import {
   BellIcon,
   Search2Icon,
   CheckCircleIcon,
+  CalendarIcon,
+  InfoOutlineIcon,
+  EditIcon,
+  SettingsIcon,
 } from "@chakra-ui/icons";
 import {
   Box,
@@ -32,30 +36,50 @@ const ChakraComponent: React.FC = () => {
     <ChakraProvider theme={theme}>
       <Box>
         <HStack alignItems="start">
-          <Box w="30%" h="100vh" bg="white" p="30">
+          <Box w="30%" minH="100vh" bg="white" p="30">
             <VStack p="1rem">
-              <Avatar
-                size="2xl"
-                name="Segun Adebayo"
-                src="https://bit.ly/sage-adebayo"
-              />
-              <Heading as="h2" size="md">
-                Miranda
-              </Heading>
-              <Text fontSize="md" fontWeight="medium" color="gray.400">
-                Lead Designer
-              </Text>
-              <Wrap direction="column">
-                <WrapItem>Work</WrapItem>
-                <WrapItem>Plan</WrapItem>
-                <WrapItem>Stats</WrapItem>
-                <WrapItem>Documents</WrapItem>
-                <WrapItem>Users</WrapItem>
-                <WrapItem>Settings</WrapItem>
+              <Box marginBottom="60px">
+                <Avatar
+                  size="2xl"
+                  name="Segun Adebayo"
+                  src="https://bit.ly/sage-adebayo"
+                />
+                <Heading as="h2" size="md" mt="20px">
+                  Miranda
+                </Heading>
+                <Text fontSize="sm" fontWeight="medium" color="gray.400">
+                  Lead Designer
+                </Text>
+              </Box>
+              <Wrap direction="column" spacing="20px">
+                <WrapItem>
+                  <HStack>
+                    <CalendarIcon color="pink" />
+                    <Box fontWeight="medium" color="gray.500"> Plan</Box>
+                  </HStack>
+                </WrapItem>
+                <WrapItem>
+                  <HStack>
+                    <InfoOutlineIcon  color="pink"  />
+                    <Box fontWeight="medium"  color="gray.500"> Stats</Box>
+                  </HStack>
+                </WrapItem>
+                <WrapItem>
+                  <HStack>
+                    <EditIcon color="pink"  />
+                    <Box fontWeight="medium"  color="gray.500">Documents</Box>
+                  </HStack>
+                </WrapItem>
+                <WrapItem>
+                  <HStack>
+                    <SettingsIcon color="pink" />
+                    <Box fontWeight="medium" color="gray.500">Settings</Box>
+                  </HStack>
+                </WrapItem>
               </Wrap>
             </VStack>
           </Box>
-          <Box w="70%" h="100vh" bg="gray.100" p="30">
+          <Box w="70%" minH="100vh" bg="gray.100" p="30">
             <HStack>
               <Box borderRadius="50%" p="3" bg="white">
                 <EmailIcon w={6} h={6} color="gray.400" />
